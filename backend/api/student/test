@@ -1,0 +1,1 @@
+SELECT   student.id as id  student.name as name,supervisor.name as supervisor_name, organization.name as orgaization_name,vacancies.job_title,student.gpa as gpa ,student.cv as cv  FROM student ,supervisor,organization ,vacancies WHERE supervisor.id=student.supervisor_id and organization.id= student.organization_id and vacancies.id=student.vacancy_id  '
